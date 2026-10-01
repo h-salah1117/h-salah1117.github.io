@@ -636,6 +636,10 @@ html:not(.js) .nav-links { position: static; display: flex; flex-direction: row;
   border-radius: 8px;
 }
 
+/* Tall portrait screenshot (offline version): show it whole, not shrunk into a 16:10 box */
+.step-media--tall { aspect-ratio: auto; padding: 16px; }
+.step-media--tall img { width: auto; max-width: 100%; height: auto; max-height: 460px; box-shadow: var(--shadow); }
+
 .step-content { padding: 18px; }
 .step-label { margin: 0 0 6px; font-size: .82rem; font-weight: 600; color: var(--accent); letter-spacing: .03em; }
 .step-content h4 { font-size: 1.25rem; }
