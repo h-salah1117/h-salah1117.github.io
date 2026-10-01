@@ -1,0 +1,25 @@
+# Keeps the Efteely Hugging Face Space from going to sleep
+# by pinging it once a day. Can also be run by hand from the Actions tab.
+name: Keep Efteely awake
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # every day at 06:00 UTC
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    env:
+      # TODO: confirm this is the Space's direct URL.
+      # Find it on the Space page: "⋮" menu → "Embed this Space" → "Direct URL".
+      SPACE_URL: "https://h-salah-online-efteely.hf.space"
+    steps:
+      - name: Ping the Space
+        run: |
+          status=$(curl -s -o /dev/null -w "%{http_code}" --max-time 120 --retry 3 --retry-delay 20 "$SPACE_URL")
+          echo "HTTP status: $status"
+          # A sleeping Space may answer with a non-200 while it boots; that still wakes it up.
+          if [ "$status" = "000" ]; then
+            echo "::warning::No response from $SPACE_URL (check the URL)"
+          fi

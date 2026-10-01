@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Hazem Mohammad Salah · NLP / GenAI Engineer</title>
+  <meta name="description" content="Hazem Mohammad Salah, NLP / GenAI Engineer specialized in Arabic RAG systems. Builder of Efteely, a production Arabic fatwa RAG assistant over 50,000+ records.">
+  <meta name="author" content="Hazem Mohammad Salah">
+  <meta name="keywords" content="Hazem Salah, NLP Engineer, GenAI, Arabic NLP, RAG, LangChain, Data Science, Portfolio">
+  <link rel="canonical" href="https://h-salah1117.github.io/">
+  <meta name="theme-color" content="#0f766e">
+
+  <!-- Open Graph / social previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://h-salah1117.github.io/">
+  <meta property="og:title" content="Hazem Mohammad Salah · NLP / GenAI Engineer">
+  <meta property="og:description" content="NLP / GenAI Engineer specialized in Arabic RAG systems. Built and deployed a production Arabic RAG chatbot over 50K+ fatwas.">
+  <meta property="og:image" content="https://h-salah1117.github.io/images/Hazem.jpg">
+  <meta property="og:image:alt" content="Portrait of Hazem Mohammad Salah">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Hazem Mohammad Salah · NLP / GenAI Engineer">
+  <meta name="twitter:description" content="NLP / GenAI Engineer specialized in Arabic RAG systems.">
+  <meta name="twitter:image" content="https://h-salah1117.github.io/images/Hazem.jpg">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='26' fill='white' text-anchor='middle'%3EHS%3C/text%3E%3C/svg%3E">
+
+  <!-- Apply saved theme before paint (avoids a flash of the wrong theme) -->
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.add('js');
+      try {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'dark' || saved === 'light') root.setAttribute('data-theme', saved);
+      } catch (e) { /* storage blocked: keep light default */ }
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="nav-logo" href="#top" aria-label="Hazem Salah, back to top">HS<span class="dot">.</span></a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Open menu</span>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#efteely">Efteely</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+        <!-- moon (shown in light theme) -->
+        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <!-- sun (shown in dark theme) -->
+        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero container" id="top" aria-labelledby="hero-name">
+      <div class="hero-text">
+        <p class="eyebrow">Hi, I'm</p>
+        <h1 id="hero-name" class="hero-name">Hazem Mohammad Salah</h1>
+        <p class="hero-title">NLP / GenAI Engineer</p>
+        <p class="hero-subtitle">Specialized in <span class="hl">Arabic RAG systems</span></p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#efteely">View Projects</a>
+          <!-- TODO: add the PDF at assets/Hazem_Salah_CV.pdf -->
+          <a class="btn btn-ghost" href="assets/Hazem_Salah_CV.pdf" download>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+            Download CV
+          </a>
+        </div>
+
+        <ul class="hero-social" aria-label="Profiles">
+          <li><a href="https://github.com/h-salah1117" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/hazem-mo-salah" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.kaggle.com/hazemmosalah" target="_blank" rel="noopener">Kaggle</a></li>
+        </ul>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-photo">
+          <!-- Hero photo: not lazy-loaded on purpose (it is above the fold) -->
+          <img src="images/Hazem.jpg" alt="Portrait of Hazem Mohammad Salah" width="460" height="603" fetchpriority="high">
+        </div>
+
+        <!-- Signature animation: a looping RAG flow. Driven by js/main.js (section "RAG demo"). -->
+        <figure class="rag-card" aria-labelledby="rag-caption">
+          <div class="rag-head">
+            <span class="rag-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="rag-label">Efteely · RAG</span>
+            <button class="rag-pause" type="button" aria-label="Pause animation" aria-pressed="false">
+              <svg class="i-pause" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+              <svg class="i-play" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5v14l12-7z"/></svg>
+            </button>
+          </div>
+
+          <figcaption id="rag-caption" class="sr-only">
+            Animated demo: an Arabic question is asked, the system retrieves the top 5 matching fatwas from 50,000+ records, then answers with a source.
+          </figcaption>
+
+          <div class="rag-body" aria-hidden="true">
+            <!-- 1. Question -->
+            <div class="rag-q" lang="ar" dir="rtl">
+              <span class="rag-q-text" data-full="ما حكم صيام يوم الجمعة منفرداً؟">ما حكم صيام يوم الجمعة منفرداً؟</span><span class="caret"></span>
+            </div>
+
+            <!-- 2. Retrieval -->
+            <div class="rag-retrieve">
+              <p class="rag-status"><span class="spinner"></span>Retrieving from 50,000+ fatwas…</p>
+              <ol class="rag-docs">
+                <li><span>#1</span><b style="--s:.92"></b><em>0.92</em></li>
+                <li><span>#2</span><b style="--s:.88"></b><em>0.88</em></li>
+                <li><span>#3</span><b style="--s:.84"></b><em>0.84</em></li>
+                <li><span>#4</span><b style="--s:.79"></b><em>0.79</em></li>
+                <li><span>#5</span><b style="--s:.74"></b><em>0.74</em></li>
+              </ol>
+              <p class="rag-topk">top-k = 5</p>
+            </div>
+
+            <!-- 3. Answer -->
+            <div class="rag-answer" lang="ar" dir="rtl">
+              <p>يُكره إفراد يوم الجمعة بالصيام، إلا أن يُصام يومٌ قبله أو بعده، أو يوافق صوماً معتاداً.</p>
+              <span class="chip-source">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg>
+                المصدر: فتوى مسترجعة
+              </span>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= 1. ABOUT ================= -->
+    <section class="section container" id="about" aria-labelledby="about-title">
+      <h2 class="section-title reveal" id="about-title"><span class="num">01</span> About</h2>
+      <div class="about reveal">
+        <p>I'm an <strong>AI Engineer &amp; Data Scientist</strong> focused on Generative AI and Arabic NLP.</p>
+        <p>I built and deployed a <strong>production Arabic RAG chatbot</strong> over 50K+ fatwa records, from scraping the data to serving it live.</p>
+        <p>Data Science student at Minya National University (graduating 2027), <strong>open to junior AI / NLP / GenAI / Data Science roles</strong>.</p>
+      </div>
+    </section>
+
+    <!-- ================= 2. FEATURED: EFTEELY ================= -->
+    <section class="section container" id="efteely" aria-labelledby="efteely-title">
+      <h2 class="section-title reveal" id="efteely-title"><span class="num">02</span> Featured project</h2>
+
+      <article class="case">
+        <header class="case-head reveal">
+          <p class="case-kicker">Case study</p>
+          <h3 class="case-title">Efteely <span lang="ar" dir="rtl" class="ar">إفتيلي</span></h3>
+          <p class="case-lead">An Arabic Islamic Fatwa RAG assistant, built in three stages: from raw web pages to a grounded, production chatbot.</p>
+        </header>
+
+        <ol class="stepper">
+          <!-- Stage 1 -->
+          <li class="step reveal">
+            <div class="step-marker" aria-hidden="true">1</div>
+            <div class="step-card">
+              <div class="step-media">
+                <img src="images/dataset-cover.png" alt="Islamic Fatwa Q&amp;A Dataset cover for Arabic RAG and NLP research on Kaggle" width="793" height="400" loading="lazy">
+              </div>
+              <div class="step-content">
+                <p class="step-label">Stage 1 · The Data</p>
+                <h4>51,000+ fatwas, scraped and cleaned</h4>
+                <p>Scraped and preprocessed 51,000+ fatwas from three sources (Bin Baz, IslamQA, IslamWeb) and published them as a public dataset on Kaggle.</p>
+                <ul class="tags" aria-label="Technologies">
+                  <li>Web Scraping</li><li>Pandas</li><li>Data Cleaning</li><li>Arabic NLP</li>
+                </ul>
+                <div class="links">
+                  <!-- TODO: replace with the Kaggle dataset URL -->
+                  <a class="link" href="https://www.kaggle.com/datasets/hazemmosalah/50k-islamic-fatwa-q-and-a-dataset-arabic" target="_blank" rel="noopener">Dataset on Kaggle <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Stage 2 -->
+          <li class="step reveal">
+            <div class="step-marker" aria-hidden="true">2</div>
+            <div class="step-card">
+              <div class="step-media step-media--tall">
+                <img src="images/efteely%20ofline.jpg" alt="Efteely offline version: an Arabic question with the generated answer, its source link and the original fatwa text" width="426" height="615" loading="lazy">
+              </div>
+              <div class="step-content">
+                <p class="step-label">Stage 2 · v1 Offline</p>
+                <h4>Fully local, privacy-first RAG</h4>
+                <p>CAMeL-Lab Arabic BERT embeddings (768-d), cosine-similarity top-5 retrieval, and a local Gemma 3 4B model via Ollama. No external APIs: everything runs on the machine.</p>
+                <ul class="tags" aria-label="Technologies">
+                  <li>CAMeL-BERT</li><li>Ollama</li><li>Gemma</li><li>RAG</li>
+                </ul>
+                <div class="links">
+                  <a class="link" href="https://github.com/h-salah1117/Efteely-Islamic-Chatbot" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Stage 3 -->
+          <li class="step reveal">
+            <div class="step-marker step-marker--live" aria-hidden="true">3</div>
+            <div class="step-card">
+              <div class="step-media">
+                <img src="images/efteely.png" alt="Efteely online version chat interface in Arabic, live on Hugging Face Spaces" width="1176" height="788" loading="lazy">
+              </div>
+              <div class="step-content">
+                <p class="step-label">Stage 3 · v2 Online <span class="badge badge-live">Production</span></p>
+                <h4>Live on Hugging Face Spaces</h4>
+                <ul class="bullets">
+                  <li>ChromaDB retrieval with multilingual-e5 embeddings</li>
+                  <li>LangChain chain with Llama 3.3 70B (Groq)</li>
+                  <li>Answers grounded only in retrieved fatwas, with source links to the originals</li>
+                  <li>Conversation-aware retrieval (last 6 turns)</li>
+                  <li>LLM-based intent detection: chitchat vs. religious questions</li>
+                </ul>
+                <ul class="tags" aria-label="Technologies">
+                  <li>LangChain</li><li>ChromaDB</li><li>multilingual-e5</li><li>Llama 3.3</li><li>Groq</li>
+                </ul>
+                <div class="links">
+                  <div class="live-wrap">
+                    <a class="btn btn-primary btn-sm" href="https://huggingface.co/spaces/H-Salah/online-efteely" target="_blank" rel="noopener">Try it live <span aria-hidden="true">↗</span></a>
+                    <small class="muted">Free hosting, may take a few seconds to wake up.</small>
+                  </div>
+                  <a class="link" href="https://github.com/h-salah1117/Online-Efteely" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </article>
+    </section>
+
+    <!-- ================= 3. PROJECTS ================= -->
+    <section class="section container" id="projects" aria-labelledby="projects-title">
+      <h2 class="section-title reveal" id="projects-title"><span class="num">03</span> Projects</h2>
+
+      <!--
+        Card images: every card has a <div class="card-media">.
+        - With a screenshot: put one <img ...> line inside it.
+        - Without: the designed header (.card-art gradient + SVG icon) is shown.
+          To add a screenshot later, just UNCOMMENT the <img> line already waiting
+          inside that card (it covers the art automatically).
+      -->
+      <div class="grid">
+
+        <!-- AI Customer Support Copilot -->
+        <article class="card reveal">
+          <div class="card-media">
+            <img src="images/copilot%20chatbot.png" alt="AI Support Assistant chat UI classifying issues and answering an order-status request" width="985" height="850" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>AI Customer Support Copilot <span class="sub">Agentic AI</span></h3>
+            <p>ReAct agent (Thought → Action → Observation) with autonomous tool calling such as order-status lookup. Extracts structured JSON (sentiment, issue type, order ID) with Pydantic. FastAPI backend and Streamlit chat UI, running Llama 3.3 70B via Groq and NVIDIA NIM. Built during the NVIDIA DLI workshop series.</p>
+            <ul class="tags" aria-label="Technologies">
+              <li>LangChain</li><li>LCEL</li><li>ReAct</li><li>Tool Calling</li><li>Pydantic</li><li>FastAPI</li><li>Streamlit</li>
+            </ul>
+            <a class="link" href="https://github.com/h-salah1117/Customer_Support_ChatBot_GroqLLM" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <!-- MAZAG Movies -->
+        <article class="card reveal">
+          <div class="card-media">
+            <img src="images/mazag/Mazag.png" alt="MAZAG Movies logo over a blurred grid of movie posters" width="1536" height="1024" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>MAZAG Movies <span class="sub">Recommender</span></h3>
+            <p>KNN-based movie recommendation system on a 7,000+ movie dataset, with feature engineering and scaling to find films with a similar "mazag" (mood).</p>
+            <ul class="tags" aria-label="Technologies">
+              <li>Python</li><li>Scikit-learn</li><li>KNN</li><li>Pandas</li><li>Feature Engineering</li>
+            </ul>
+            <a class="link" href="https://github.com/h-salah1117/MAZAG-movies-recommendation" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <!-- Classical NLP Toolkit (no screenshot yet: designed header) -->
+        <article class="card reveal">
+          <div class="card-media card-art card-art--nlp">
+            <!-- SCREENSHOT: uncomment the next line and set the file name -->
+            <!-- <img src="images/elevvo.png" alt="Elevvo NLP toolkit screenshot" width="1200" height="800" loading="lazy"> -->
+            <svg viewBox="0 0 64 64" width="72" height="72" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="8" y="12" width="48" height="34" rx="6"/>
+              <path d="M20 46l-6 8v-8"/>
+              <path d="M18 24h20M18 32h28"/>
+              <circle cx="46" cy="24" r="3" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="card-body">
+            <h3>Classical NLP Toolkit <span class="sub">Elevvo Internship</span></h3>
+            <p>Four NLP tasks end to end: sentiment analysis, news category classification, fake news detection, and named entity recognition.</p>
+            <ul class="tags" aria-label="Technologies">
+              <li>TF-IDF</li><li>Scikit-learn</li><li>NLTK</li><li>spaCy</li>
+            </ul>
+            <a class="link" href="https://github.com/h-salah1117/Elevvo-NLP-Internship" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <!-- IoT Smart Radar System -->
+        <article class="card reveal">
+          <div class="card-media">
+            <img src="images/IoT.png" alt="IoT Smart Radar System overview: Arduino, ultrasonic sensor, and a laptop running radar and hand-tracking views" width="1376" height="768" loading="lazy">
+          </div>
+          <div class="card-body">
+            <span class="badge badge-team">Team Project</span>
+            <h3>IoT Smart Radar System <span class="sub">Computer Vision + Arduino</span></h3>
+            <p><strong>My part:</strong> the computer vision and the Arduino tracking code.</p>
+            <ul class="bullets">
+              <li>Real-time hand tracking with MediaPipe (21 landmarks); the palm centre is the target</li>
+              <li>Pixel-to-servo geometry using camera FOV and camera–laser offset, with smoothing</li>
+              <li>OpenCV HUD with a live radar sweep and ultrasonic distance readout</li>
+              <li>Threaded serial link to the Arduino with auto-reconnect</li>
+              <li>Arduino C++: command parser, non-blocking pan/tilt servo pulses, HC-SR04 distance streaming, laser and buzzer control</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies">
+              <li>Python</li><li>OpenCV</li><li>MediaPipe</li><li>NumPy</li><li>PySerial</li><li>Arduino C++</li>
+            </ul>
+            <a class="link" href="https://github.com/taharw12/IoT-Smart-Radar-System" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= 4. EXPERIENCE ================= -->
+    <section class="section container" id="experience" aria-labelledby="experience-title">
+      <h2 class="section-title reveal" id="experience-title"><span class="num">04</span> Experience</h2>
+
+      <ol class="timeline">
+        <li class="tl-item reveal">
+          <div class="tl-dot tl-dot--now" aria-hidden="true"></div>
+          <div class="tl-content">
+            <p class="tl-meta"><span class="badge badge-live">Ongoing</span> DEPI · Remote</p>
+            <h3>Agentic AI &amp; Generative AI System Developer Trainee</h3>
+            <p>LLM architecture and debugging, API integration, advanced prompting, Hugging Face models, RAG and memory systems, multi-agent systems, deployment and monitoring.</p>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-content">
+            <p class="tl-meta"><time datetime="2026-03">March 2026</time> · Elevvo · Remote</p>
+            <h3>NLP Intern</h3>
+            <p>Sentiment analysis, news classification, fake news detection and NER using TF-IDF, Scikit-learn, NLTK and spaCy.</p>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-content">
+            <p class="tl-meta"><time datetime="2025-06">June 2025</time> – <time datetime="2025-12">Dec 2025</time> · DEPI · Remote</p>
+            <h3>Data Scientist Intern</h3>
+            <p>Predictive ML models in analytical pipelines, ETL workflows, Power BI dashboards and automated reporting.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ================= 5. SKILLS ================= -->
+    <section class="section container" id="skills" aria-labelledby="skills-title">
+      <h2 class="section-title reveal" id="skills-title"><span class="num">05</span> Skills</h2>
+
+      <div class="skills">
+        <div class="skill-group reveal">
+          <h3>GenAI &amp; Agents</h3>
+          <ul class="chips">
+            <li>RAG</li><li>LangChain</li><li>LCEL</li><li>ReAct Agents</li><li>Tool Calling</li><li>Structured Output (Pydantic)</li><li>Prompt Engineering</li><li>Llama 3.3 (Groq)</li><li>NVIDIA NIM</li><li>Gemma (Ollama)</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>NLP</h3>
+          <ul class="chips">
+            <li>Embeddings (Multilingual E5, CAMeL-Lab BERT, BGE-M3)</li><li>Semantic Search</li><li>Intent Routing</li><li>spaCy</li><li>NLTK</li><li>NER</li><li>Text Classification</li><li>Sentiment Analysis</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Vector DBs &amp; Backend</h3>
+          <ul class="chips">
+            <li>ChromaDB</li><li>FastAPI</li><li>REST APIs</li><li>Docker</li><li>Streamlit</li><li>Git</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>ML &amp; Data Science</h3>
+          <ul class="chips">
+            <li>Python</li><li>SQL</li><li>Scikit-learn</li><li>PyTorch</li><li>TensorFlow</li><li>Pandas</li><li>NumPy</li><li>Statistics</li><li>EDA</li><li>Feature Engineering</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Data &amp; BI</h3>
+          <ul class="chips">
+            <li>ETL Pipelines</li><li>Web Scraping</li><li>SQL Server</li><li>SQLite</li><li>Power BI (DAX)</li><li>Matplotlib</li><li>Seaborn</li>
+          </ul>
+        </div>
+        <div class="skill-group skill-group--learning reveal">
+          <h3>Currently learning</h3>
+          <ul class="chips">
+            <li>Agentic AI systems</li><li>LLM/RAG evaluation (Ragas, DeepEval)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 6. CERTIFICATIONS ================= -->
+    <section class="section container" id="certifications" aria-labelledby="certs-title">
+      <h2 class="section-title reveal" id="certs-title"><span class="num">06</span> Certifications</h2>
+
+      <ul class="certs">
+        <li class="cert reveal">
+          <p class="cert-org">NVIDIA DLI · ITI</p>
+          <h3>Generative AI Training Program</h3>
+          <p class="cert-meta">35h · Jan–Feb 2026</p>
+          <p class="cert-note">Prompt Engineering for LLM apps (17h) · Augmenting LLMs with RAG (9h)</p>
+        </li>
+        <li class="cert reveal">
+          <p class="cert-org">NVIDIA Academy</p>
+          <h3>AI for All: From Basics to GenAI Practice</h3>
+          <p class="cert-meta">Jan 2026</p>
+        </li>
+        <li class="cert reveal">
+          <p class="cert-org">DEPI · MCIT</p>
+          <h3>Data Scientist Track</h3>
+          <p class="cert-meta">2025</p>
+        </li>
+        <li class="cert reveal">
+          <p class="cert-org">Elevvo</p>
+          <h3>NLP Internship</h3>
+          <p class="cert-meta">Mar 2026</p>
+        </li>
+        <li class="cert reveal">
+          <p class="cert-org">Oracle</p>
+          <h3>AI for You</h3>
+          <p class="cert-meta">Badge · 100%</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ================= 7. EDUCATION ================= -->
+    <section class="section container" id="education" aria-labelledby="edu-title">
+      <h2 class="section-title reveal" id="edu-title"><span class="num">07</span> Education</h2>
+      <div class="edu reveal">
+        <svg class="edu-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/><path d="M22 9v6"/></svg>
+        <div>
+          <h3>B.Sc. in Data Science</h3>
+          <p>Minya National University</p>
+          <p class="muted">2023 – 2027 (Expected)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 8. CONTACT ================= -->
+    <section class="section container" id="contact" aria-labelledby="contact-title">
+      <h2 class="section-title reveal" id="contact-title"><span class="num">08</span> Contact</h2>
+      <div class="contact reveal">
+        <p class="contact-lead">Open to junior AI / NLP / GenAI / Data Science roles. Let's talk.</p>
+        <a class="btn btn-primary contact-email" href="mailto:h.salah1711@gmail.com">h.salah1711@gmail.com</a>
+        <ul class="contact-links">
+          <li>
+            <a href="https://www.linkedin.com/in/hazem-mo-salah" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.5c0-1.3-.02-3-1.83-3-1.84 0-2.12 1.43-2.12 2.9V21H9z"/></svg>
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/h-salah1117" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://www.kaggle.com/hazemmosalah" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.8 23.6c-.03.1-.12.15-.27.15h-3.1c-.18 0-.34-.08-.47-.24l-5.13-6.52-1.43 1.36v5.1c0 .2-.1.3-.3.3H5.7c-.2 0-.3-.1-.3-.3V.54c0-.2.1-.3.3-.3h2.4c.2 0 .3.1.3.3v14.07l6.15-6.22c.13-.13.28-.2.46-.2h3.22c.14 0 .23.06.27.17.03.13.02.22-.04.27l-6.5 6.3 6.78 8.42c.08.09.1.18.06.25z"/></svg>
+              Kaggle
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> Hazem Mohammad Salah · Built with plain HTML, CSS &amp; JS.</p>
+    </div>
+  </footer>
+</body>
+</html>
